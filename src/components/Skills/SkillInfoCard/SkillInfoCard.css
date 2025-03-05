@@ -1,0 +1,101 @@
+.skills-info-card {
+    min-height: 23rem;
+    border-radius: 0.65rem;
+    border: 1.5px solid #5175b9;
+    background: rgba(44, 84, 136, 0.158);
+    backdrop-filter: blur(1rem);
+}
+
+.skills-info-card h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(180deg, #2155b4 0% , #03c4ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid #5175b9;
+}
+
+.skills-info-context {
+    padding: 2rem;
+}
+
+.skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-info p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skill-info .percentage {
+    color: #8bc7ff;
+}
+
+.skill-progress-bg { 
+    width: 100%;
+    height: 0.5rem;
+    background: #0a1c33;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.skill-progress {
+    width: 0%;
+    height: 0.5rem;
+    background: linear-gradient(264deg, #2fc9dd -5.09%, #115bc9 106%);
+    border-radius: 0.5rem;
+    transition: all 01s ease-in-out;
+}
+
+@media (max-width:1025px) {
+    .skills-info h6 {
+        font-size: 1.1rem;
+    }
+
+    .skill-info p {
+        font-size: 0.9rem;
+    }
+
+    .skill-info-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:800px) {
+    .skills-info h6 {
+        font-size: 1.0rem;
+    }
+
+    .skill-info p {
+        font-size: 0.8rem;
+    }
+
+    .skill-info-content {
+        padding: 1.3rem;
+    }
+}
+
+@media (max-width:500px) {
+    .skills-info h6 {
+        font-size: 0.9rem;
+    }
+
+    .skill-info p {
+        font-size: 0.7rem;
+    }
+
+    .skill-info-content {
+        padding: 1.0rem;
+    }
+}
+
+
+
+
+

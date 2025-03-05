@@ -1,0 +1,163 @@
+.nav-wrapper {
+    padding: 0.0rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(5px);
+    border-bottom: #5c518536 2px solid;
+}
+
+.nav-content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 6rem;
+    height: auto;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    list-style: none;
+}
+
+.nav-content li {
+    margin: 0 1.5rem;
+}
+.menu-item {
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item-last {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item::before {
+    content: ' ';
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg , #73b0ff -0.13%, #3163e2 99.87%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.1s ease;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-item-last::before {
+    content: ' ';
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg , #73b0ff -0.13%, #3163e2 99.87%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.1s ease;
+}
+
+.menu-item-last:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.contact-btn {  
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg , #3bb1d4 0%, #3766ca 100%);
+    padding: 0.5rem 2.5rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    margin-left: 20px;
+}
+
+.contact-btn:hover {
+    color: #9fe9ff;
+    background: transparent;
+    outline: 0.15rem solid #3766ca;
+}
+
+.menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+    color: #4a83ff;
+    background: #00000000;
+    border: 1px solid #69aff0;
+}
+
+.icon {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+@media (max-width:425px) {
+    .logo {
+        width: 5rem;
+        height: auto;
+    }
+}
+
+@media (max-width:911px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-content ul {
+        display: none;
+    }
+}
+
+
+@media (max-width:1325px) {
+    .nav-wrapper {
+        padding: 0 2rem;
+    }
+}
+
+
+

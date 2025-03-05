@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(transparent 6px, transparent),
+    linear-gradient(transparent, #070707 15%),
+    repeating-linear-gradient(
+      #2b2b2b,
+      #1b1b1b10 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+        to right,
+        #2b2b2b,
+        #1b1b1b 1px,
+        transparent 1px,
+        transparent 40px
+      )
+      #080d1d;
+      cursor: url('cursor.svg'), default;
+}

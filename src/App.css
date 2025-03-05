@@ -1,0 +1,15 @@
+.container {
+    max-width: 1300px !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}

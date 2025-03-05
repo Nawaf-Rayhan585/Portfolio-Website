@@ -1,0 +1,203 @@
+.about-container {
+    position: relative;
+    padding-bottom: 6rem;
+    padding-top: 12rem;
+}
+
+.about-container::after,
+.about-container::before {
+    content: ' ';
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #082146;
+    position: absolute;
+    z-index: -1;
+    filter: blur(150px);
+}
+
+.about-container::after {
+    top: -3rem;
+    left: -5rem;
+}
+
+.about-container::before {
+    background: #17294b;
+    bottom: 0;
+    right: 0;
+}
+
+.heading {
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+    font-weight: 600;
+}
+
+.about__container {
+    display: flex;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.My-Image {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about__me-image {
+    border-radius: 2rem;
+}
+
+.context-text {
+    margin-bottom: 50px;
+    color: #c9c9c9;
+    margin-top: 50px;
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about__card {
+    border: 2px solid #1d89e0;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    background: #003c8026;
+    font-size: 1.2rem;
+}
+
+.about__card i {
+    font-size: 1rem;
+}
+
+.btn2 {
+    background: rgba(96, 96, 213, 0.048);
+    border: 2px solid #1d89e0;
+    padding: 0.61rem 6.5rem;
+    border-radius: 7px;
+    transition: all ease 0.09s;
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+}
+
+.btn2:hover {
+    background: #1d89e0;
+}
+
+.btn2:active {
+    transform: scale(0.97);
+}
+
+.btn2 a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+/* ========================== RESPONSIVE DESIGN ================================= */
+
+/* For medium devices (tablets, smaller laptops) */
+@media screen and (max-width: 1090px) {
+    .about__container {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .My-Image {
+        width: 300px;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .about__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .about__card {
+        padding: 1.8rem;
+    }
+
+    .about-content p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+/* For smaller devices (phones) */
+@media screen and (max-width: 600px) {
+    .about__card {
+        font-size: 0.9rem;
+        padding: 1.5rem;
+    }
+
+    .about__content{
+        margin: 1rem 0 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .btn2 {
+        width: 100%;
+        padding: 0.61rem 3rem;
+        font-size: 1rem;
+    }
+
+    .about__me-image {
+        margin: 0 auto;
+    }
+}
+
+/* For very small screens (portrait phones < 550px) */
+@media screen and (max-width: 550px) {
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .My-Image {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center; /* Center the cards */
+    }
+
+    .about__card {
+        font-size: 0.85rem;
+        padding: 1.3rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .btn2 {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+}
+
+.block {
+    animation: appear linear 5s;
+    animation-timeline: view();
+    animation-range: entry 0;
+}

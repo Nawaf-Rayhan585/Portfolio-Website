@@ -1,0 +1,106 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: #2a74e2 1px solid;
+  background: transparent;
+  /* backdrop-filter: blur(100px); */
+  padding: 18px 24px;
+  max-width: 423px;
+  transition: all 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.image {
+  margin-bottom: 26px;
+  border-radius: 10px;
+  width: 370px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  background: #2a74e2;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 13px;
+  padding: 7px 22px;
+  width: 50%;
+  margin-left: 12px;
+}
+
+
+/* .link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 13px;
+  background: #2a74e2;
+  padding: 9px 22px;
+  width: 50%;
+  margin-left: 15px;
+} */
+
+
+
+
+.demo {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 13px;
+  background: transparent;
+  border: 2px solid #2a74e2;
+  padding: 7px 22px;
+  width: 50%;
+}
+
+
+
+
+@media screen and (max-width:930px) {
+  .container {
+    padding: 18px 24px;
+    max-width: 320px;
+    max-height: 500px;
+  }
+
+  .image {
+    margin-bottom: 26px;
+    border-radius: 5px;
+    width: 270px;
+  }
+
+  .skill {
+    font-size: 13px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 17px
+  }
+}

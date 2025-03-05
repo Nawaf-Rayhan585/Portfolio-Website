@@ -1,0 +1,176 @@
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 25px;
+    height: 200px;
+    background-color: #1b2435;
+    padding: 20px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Navigation */
+.nav-content-main {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu-item-footer, .menu-item-last-footer {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.menu-item-footer:hover, .menu-item-last-footer:hover {
+    color: #3bb1d4;
+    transition: 0.3s;
+}
+
+/* Resume Button */
+.contact-btn-footer {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, #3bb1d4 0%, #3766ca 100%);
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.icon-footer-btn {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.contact-btn-footer:hover {
+    background: linear-gradient(90deg, #3766ca 0%, #3bb1d4 100%);
+    transition: all 0.3s ease;
+}
+
+/* Footer Content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.details-p {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Social Icons */
+.content-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-footer, .icon-fiverr {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.icon-footer:hover, .icon-fiverr:hover {
+    transform: scale(1.1);
+}
+
+.icon-fiverr {
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* --------- Responsive Styles for Tablet & Mobile --------- */
+@media (max-width: 1024px) {
+    .footer-container {
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-content-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .menu-item-footer, .menu-item-last-footer {
+        font-size: 1rem;
+    }
+
+    .contact-btn-footer {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 0.4rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .details-p {
+        font-size: 0.8rem;
+    }
+
+    .icon-footer, .icon-fiverr {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .content {
+        gap: 8px;
+    }
+
+    .icon-footer, .icon-fiverr {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}

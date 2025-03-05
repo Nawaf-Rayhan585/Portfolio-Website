@@ -1,0 +1,48 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  padding-bottom: 12rem;
+  padding-top: 12rem;
+}
+
+.container::after,
+.container::before {
+    content: ' ';
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50rem;
+    background: #0e0947;
+    position: absolute;
+    z-index: -1;
+    filter: blur(250px);
+}
+
+.container::after {
+    top: -3rem;
+    left: -5rem;
+}
+
+.container::before {
+    background: #344970;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+  margin-right: 2px;
+}
+
+.projects {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}

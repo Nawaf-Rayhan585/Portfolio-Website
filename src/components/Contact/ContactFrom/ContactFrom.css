@@ -1,0 +1,64 @@
+.contact-form-content {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    grid-gap: 1.5rem;
+}
+
+form input,
+form textarea {
+    flex: 1;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #fff;
+    background: #101c2e67;
+    border-radius: 0.6rem;
+    border: 1.5px solid #518ab9;
+    padding: 1rem;
+}
+
+form button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0.6rem;
+    border: 1.5px solid #3b7bdb;
+    background: linear-gradient(264deg, #0d4ba8 -5.09%, #38b9ca 106%);
+    padding: 0.7rem;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: #7cb0ff;
+    background: transparent;
+}
+
+@media (max-width:450px) {
+    .name-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form input,
+    form textarea {
+        border-radius: 0.3rem;
+        padding: 0.7rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+    }
+}
+

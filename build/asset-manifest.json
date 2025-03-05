@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee09464d.css",
+    "main.js": "/static/js/main.e06347ef.js",
+    "static/media/lovepik-envelope-linear-icon-png-image_400283670_wh1200-removebg-preview.png": "/static/media/lovepik-envelope-linear-icon-png-image_400283670_wh1200-removebg-preview.e48d028fb55d491f6961.png",
+    "static/media/logo.png": "/static/media/logo.6b952842155a925bb54e.png",
+    "static/media/png-clipart-github-pages-logo-repository-fork-github-mammal-cat-like-mammal-thumbnail-removebg-preview (1).png": "/static/media/png-clipart-github-pages-logo-repository-fork-github-mammal-cat-like-mammal-thumbnail-removebg-preview (1).3c00362fb8dc7c40846f.png",
+    "static/media/symbol-male-user-icon-circle-profile-icon-vector-illustration_276184-154.avif": "/static/media/symbol-male-user-icon-circle-profile-icon-vector-illustration_276184-154.f4c40cbb1373133f997f.avif",
+    "index.html": "/index.html",
+    "main.ee09464d.css.map": "/static/css/main.ee09464d.css.map",
+    "main.e06347ef.js.map": "/static/js/main.e06347ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee09464d.css",
+    "static/js/main.e06347ef.js"
+  ]
+}
